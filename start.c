@@ -1,4 +1,4 @@
-#define  _POSIX_C_SOURCE 200809L
+#define _POSIX_C_SOURCE 200809L
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -6,7 +6,7 @@
 
 void file_error(char *argv);
 void error_usage(void);
-int status = 0;		/* global var declaration */
+int status = 0; /* global var declaration */
 
 /**
  * main - entry point
@@ -24,14 +24,14 @@ int main(int argc, char **argv)
 	stack_t *stack = NULL;
 	unsigned int line_cnt = 1;
 
-	global.data_struct = 1;  /* struct defined in monty.h L58*/
+	global.data_struct = 1; /* struct defined in monty.h L58*/
 	if (argc != 2)
 		error_usage(); /* def in line 82 */
 
 	file = fopen(argv[1], "r");
 
 	if (!file)
-		file_error(argv[1]);  /* def in line 68 */
+		file_error(argv[1]); /* def in line 68 */
 
 	while ((getline(&buffer, &buf_len, file)) != (-1))
 	{

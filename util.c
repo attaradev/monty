@@ -23,7 +23,6 @@ int is_digit(char *string)
 	return (1);
 }
 
-
 /**
  * isnumber - checks if a string is a number
  * @str: provided string

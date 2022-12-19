@@ -27,4 +27,3 @@ void pchar(stack_t **stack, unsigned int line_cnt)
 	}
 	printf("%c\n", (*stack)->n);
 }
-

@@ -22,6 +22,6 @@ void _sub(stack_t **stack, unsigned int line_cnt)
 	}
 
 	result = ((*stack)->next->n) - ((*stack)->n);
-	pop(stack, line_cnt);/*For top node*/
+	pop(stack, line_cnt); /*For top node*/
 	(*stack)->n = result;
 }
